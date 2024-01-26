@@ -1,0 +1,59 @@
+.contactContainer{
+    background-color: #02538a;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-family: Roboto;
+}
+.contactContainer:hover{
+    background-color: #052c4c;
+}
+
+.titleh3{
+    color: #efefef;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.titleh4{
+    color: #efefef;
+    margin: 1px;
+    font-size: 15px;
+}
+
+.btnFavorite{
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.btnFavoriteRed{
+    margin-right: 10px;
+    color: red;
+    font-size: 25px;
+}
+.btnFavoriteWhite{
+    margin-right: 10px;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.btndeleteIcon{
+    margin-right: 10px;
+    color: #d70000;
+    font-size: 35px;
+}
+.btndeleteIcon:hover{
+    color: #ff9494;
+    cursor: pointer;
+}
+.btndelete{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
