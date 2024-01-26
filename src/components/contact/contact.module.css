@@ -36,12 +36,17 @@
     color: red;
     font-size: 25px;
 }
+.btnFavoriteRed:hover{
+    color: #b10303;
+}
 .btnFavoriteWhite{
     margin-right: 10px;
     color: #fff;
     font-size: 25px;
 }
-
+.btnFavoriteWhite:hover{
+    color: #bdbdbd;
+}
 
 .btndeleteIcon{
     margin-right: 10px;
