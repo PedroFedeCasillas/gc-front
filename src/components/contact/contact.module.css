@@ -4,12 +4,17 @@
     margin: 5px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    align-items: center;
     font-family: Roboto;
 }
 .contactContainer:hover{
     background-color: #052c4c;
+}
+
+.containerTex{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .titleh3{
@@ -20,7 +25,7 @@
 
 .titleh4{
     color: #efefef;
-    margin: 1px;
+    margin: 5px;
     font-size: 15px;
 }
 
@@ -61,4 +66,53 @@
     background-color: transparent;
     border: none;
     padding: 0;
+}
+
+@media (max-width: 810px){
+    .contactContainer {
+        padding: 20px;
+    }
+
+    .containerTex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: flex-start;
+    }
+
+    .btnFavorite,
+    .btnFavoriteRed,
+    .btnFavoriteWhite,
+    .btndeleteIcon {
+        margin-top: 5px;
+        
+    }
+
+    .btnFavorite{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 412px){
+    .contactContainer {
+        padding: 20px;
+    }
+
+    .containerTex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: flex-start;
+    }
+
+    .btnFavorite,
+    .btnFavoriteRed,
+    .btnFavoriteWhite,
+    .btndeleteIcon {
+        margin-top: 5px;
+        
+    }
 }

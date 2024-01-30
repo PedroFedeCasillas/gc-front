@@ -96,26 +96,29 @@ export default function Contact({ contact, setContacts }) {
 
   return (
     <div className={styles.contactContainer}>
-      <h3 className={styles.titleh3}>Name: {name}</h3>
-      <h4 className={styles.titleh4}>ID: {id}</h4>
-      <h4 className={styles.titleh4}>Address: {address}</h4>
-      <h4 className={styles.titleh4}>Phone: {phone}</h4>
-      <h4 className={styles.titleh4}>Email: {email}</h4>
-      {favorite ? (
-        <button className={styles.btnFavorite} onClick={handleFavorite}>
-        <FaHeart className={styles.btnFavoriteRed}/>
-        </button>
-      ) : (
-        <button className={styles.btnFavorite} onClick={handleFavorite}>
-        <FaHeart className={styles.btnFavoriteWhite}/>
-        </button>
-      )}
-      <button className={styles.btndelete} onClick={handleDelete}>
-        <MdDeleteForever className={styles.btndeleteIcon}/>
+      <div className={styles.containerTex}>
+        <h3 className={styles.titleh3}>Name: {name}</h3>
+        <h4 className={styles.titleh4}>ID: {id}</h4>
+        <h4 className={styles.titleh4}>Address: {address}</h4>
+        <h4 className={styles.titleh4}>Phone: {phone}</h4>
+        <h4 className={styles.titleh4}>Email: {email}</h4>
+      </div>
+
+        {favorite ? (
+          <button className={styles.btnFavorite} onClick={handleFavorite}>
+            <FaHeart className={styles.btnFavoriteRed} />
+          </button>
+        ) : (
+          <button className={styles.btnFavorite} onClick={handleFavorite}>
+            <FaHeart className={styles.btnFavoriteWhite} />
+          </button>
+        )}
+        <button className={styles.btndelete} onClick={handleDelete}>
+          <MdDeleteForever className={styles.btndeleteIcon} />
         </button>
 
         {/* <button onClick={handleUpdate}>editar</button> */}
-      
+
     </div>
   );
 }
