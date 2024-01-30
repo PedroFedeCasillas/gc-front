@@ -97,13 +97,13 @@ export default function Contact({ contact, setContacts }) {
   return (
     <div className={styles.contactContainer}>
       <div className={styles.containerTex}>
-        <h3 className={styles.titleh3}>Name: {name}</h3>
         <h4 className={styles.titleh4}>ID: {id}</h4>
+        <h3 className={styles.titleh3}>Name: {name}</h3>
         <h4 className={styles.titleh4}>Address: {address}</h4>
         <h4 className={styles.titleh4}>Phone: {phone}</h4>
         <h4 className={styles.titleh4}>Email: {email}</h4>
       </div>
-
+        <div className={styles.containerbuttons}>
         {favorite ? (
           <button className={styles.btnFavorite} onClick={handleFavorite}>
             <FaHeart className={styles.btnFavoriteRed} />
@@ -118,7 +118,7 @@ export default function Contact({ contact, setContacts }) {
         </button>
 
         {/* <button onClick={handleUpdate}>editar</button> */}
-
+        </div>
     </div>
   );
 }

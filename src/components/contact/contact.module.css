@@ -29,6 +29,10 @@
     font-size: 15px;
 }
 
+.containerbuttons{
+    display: flex;
+}
+
 .btnFavorite{
     background-color: transparent;
     border: none;
@@ -89,15 +93,16 @@
         
     }
 
-    .btnFavorite{
-        display: flex;
-        flex-direction: row-reverse;
+    .containerbuttons{
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
 
 @media (max-width: 412px){
     .contactContainer {
         padding: 20px;
+        display: flex;
     }
 
     .containerTex{
@@ -114,5 +119,10 @@
     .btndeleteIcon {
         margin-top: 5px;
         
+    }
+
+    .containerbuttons{
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
